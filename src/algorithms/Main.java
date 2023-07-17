@@ -1,5 +1,7 @@
 package algorithms;
 
+import algorithms.sort.Bubble;
+import algorithms.utlis.SortUtility;
 import org.apache.commons.lang3.time.StopWatch;
 
 public class Main {

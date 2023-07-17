@@ -1,9 +1,9 @@
-package algorithms;
+package algorithms.sort;
 
 public class Bubble {
 
 
-    static void sort(int[] array) {
+    public static void sort(int[] array) {
         int n = array.length;;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n - i - 1; j++) {
@@ -17,7 +17,7 @@ public class Bubble {
     }
 
 
-    static void sortEffective(int[] array) {
+    public static void sortEffective(int[] array) {
         int n = array.length;
         boolean sorted = Boolean.FALSE;
         for (int i = 0; i < n - 1 && sorted == Boolean.FALSE; i++) {
