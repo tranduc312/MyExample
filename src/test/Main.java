@@ -1,15 +1,13 @@
 package test;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Main {
 
     public static void main(String[] args) {
 //        testCategory();
-        String id1 = "4f50c70d-56c2-4e67-9aff-4a27207cfb9b, 6f10019d-e5e0-45db-a83b-bbe941df2af4";
+        /*String id1 = "4f50c70d-56c2-4e67-9aff-4a27207cfb9b, 6f10019d-e5e0-45db-a83b-bbe941df2af4";
         String id2 = "4f50c70d-56c2-4e67-9aff-4a27207cfb9b,6f10019d-e5e0-45db-a83b-bbe941df2af4";
         String id3 = "";
         List<String> ids1 = testCa2(id1);
@@ -19,7 +17,46 @@ public class Main {
 //        System.out.println(convertListToString(ids1));
 //        System.out.println(convertListToString(ids2));
 
-        System.out.println(String.join(",", Arrays.asList("4f50c70d-56c2-4e67-9aff-4a27207cfb9b", "6f10019d-e5e0-45db-a83b-bbe941df2af4")));
+        System.out.println(String.join(",", Arrays.asList("4f50c70d-56c2-4e67-9aff-4a27207cfb9b", "6f10019d-e5e0-45db-a83b-bbe941df2af4")));*/
+//        testAssert();
+        /*testBoolean(null, false); // false
+        testBoolean(false, false); // true
+        testBoolean(true, false); // false
+
+        testBoolean(null, true); // false
+        testBoolean(false, true); // false
+        testBoolean(true, true); // true*/
+//        testEqualPrimitive();
+        testToString();
+
+        AbstractCollection abstractCollection;
+
+    }
+
+    static void testToString() {
+        Object o1 = null;
+        System.out.println(o1.toString());
+    }
+
+    static void testEqualPrimitive() {
+        /*Integer i1 = 1;
+        int i2 = 1;
+        System.out.println(i1 == i2);
+        System.out.println(i1.equals(i2));*/
+        Integer i3 = 1;
+        Integer i4 = 2;
+        System.out.println(i3 != i4);
+    }
+
+    static void testBoolean(Boolean b1, boolean b2) {
+//        return Boolean.TRUE.equals(b1) && b1 != b2;
+        System.out.println(Boolean.valueOf(b2) == b1);
+    }
+
+    static boolean testAssert() {
+        List<String> list = new ArrayList<>();
+        assert list != null;
+        return true;
     }
 
     public static String convertListToString(List<String> categoryStrList){
