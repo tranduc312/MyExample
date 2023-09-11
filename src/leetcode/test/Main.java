@@ -1,4 +1,4 @@
-package test;
+package leetcode.test;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -27,10 +27,54 @@ public class Main {
         testBoolean(false, true); // false
         testBoolean(true, true); // true*/
 //        testEqualPrimitive();
-        testToString();
+//        testToString();
+//        testReference();
+//        AbstractMap abstractMap;
+//        List list;
+//        List<?> list1;
+//        ObjectStreamConstants objectStreamConstants;
+//        testColletionsEmptyList();
+//        testIntValue();
+//        testValueOf();
+//        testNextBoolean();
+//        testNull();
+        String s = null + "A";
+        System.out.println(s);
+    }
 
-        AbstractCollection abstractCollection;
+    private static void testNull() {
+        Category category = new Category();
+        System.out.println(Objects.nonNull(category));
 
+    }
+
+    private static void testNextBoolean() {
+        for (int i = 0; i < 10; i++) {
+            System.out.println(new Random().nextBoolean());
+        }
+    }
+
+    static void testValueOf() {
+        System.out.println(String.valueOf(null));
+    }
+
+    static void testIntValue() {
+        Integer i = null;
+        System.out.println(i.intValue());
+    }
+
+    static void testColletionsEmptyList() {
+//        List<Category> list = Collections.emptyList();
+        List<Category> list = null;
+        List<String> names = list.stream().map(Category::getName).collect(Collectors.toList());
+        System.out.println(names);
+    }
+
+    static void testReference() {
+        Category category = new Category("1", "2");
+        Category c2 = category;
+        category.setName("3");
+        System.out.println();
     }
 
     static void testToString() {

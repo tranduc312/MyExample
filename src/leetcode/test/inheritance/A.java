@@ -1,4 +1,4 @@
-package test.inheritance;
+package leetcode.test.inheritance;
 
 public class A {
     public A () {

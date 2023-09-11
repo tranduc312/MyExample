@@ -1,4 +1,4 @@
-package test.inheritance;
+package leetcode.test.inheritance;
 
 import java.io.Serializable;
 
