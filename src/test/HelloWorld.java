@@ -2,6 +2,6 @@ package test;
 
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("HelloWorld by jenkins updatedddd");
+        System.out.println("HelloWorld by jenkins updateddddd");
     }
 }
