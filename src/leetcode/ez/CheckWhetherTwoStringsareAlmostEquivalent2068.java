@@ -4,9 +4,9 @@ public class CheckWhetherTwoStringsareAlmostEquivalent2068 {
 
     public static void main(String[] args) {
         System.out.println(checkAlmostEquivalent("aaaa","bccb"));
-        System.out.println(checkAlmostEquivalent("abcdeef","abaaacc"));
-        System.out.println(checkAlmostEquivalent("cccddabba","babababab"));
-        System.out.println(checkAlmostEquivalent("zzzyyy","iiiiii"));
+//        System.out.println(checkAlmostEquivalent("abcdeef","abaaacc"));
+//        System.out.println(checkAlmostEquivalent("cccddabba","babababab"));
+//        System.out.println(checkAlmostEquivalent("zzzyyy","iiiiii"));
     }
 
     static boolean checkAlmostEquivalent(String word1, String word2) {

@@ -19,7 +19,7 @@ public class Main {
         for (Customer next : records.getCustomers().values()) {
             System.out.println(next);
         }
-        System.out.println(records.find("A"));
+//        System.out.println(records.find("A"));
 //
 //        for (Customer next : records) {
 //            System.out.println(next);

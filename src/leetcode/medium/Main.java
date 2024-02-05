@@ -213,7 +213,9 @@ public class Main {
         /*Objects a = null;
         System.out.println(a.toString());*/
 
-        System.out.println(testParseDouble());
+//        System.out.println(testParseDouble());
+        System.out.println(formatTime(108000000));
+        System.out.println(formatTime(30000000));
     }
 
     public static double testParseDouble() {
