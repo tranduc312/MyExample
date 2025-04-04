@@ -13,4 +13,7 @@
     <orderEntry type="library" name="projectlombok.lombok" level="project" />
     <orderEntry type="library" name="guicedee.services.commons.lang3" level="project" />
   </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="2503cb11-1e02-4660-a650-bafa0e232ba8" />
+  </component>
 </module>
