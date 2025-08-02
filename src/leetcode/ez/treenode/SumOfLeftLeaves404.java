@@ -1,5 +1,7 @@
 package leetcode.ez.treenode;
 
+import leetcode.treenode.TreeNode;
+
 public class SumOfLeftLeaves404 {
 
     public static void main(String[] args) {

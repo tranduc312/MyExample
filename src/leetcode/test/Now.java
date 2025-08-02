@@ -1,5 +1,11 @@
 package leetcode.test;
 
+import leetcode.test.dto.C;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -53,7 +59,42 @@ public class Now {
         double fixPrice = price * format * roundingValue;
         double rs = Math.round(fixPrice);
         System.out.println(rs);*/
-        testEmptyListForEach();
+//        testEmptyListForEach();
+
+//        compareHHMMDD("2025-02-16 10:00:00", "2025-02-17 20:00:00");
+//        compareHHMMDD("2025-12-31 10:00:00", "2026-01-11 20:00:00");
+//        compareHHMMDD("2025-02-16 10:00:00", "2025-02-16 20:00:00");
+//        compareHHMMDD("2025-02-16 20:00:00", "2025-02-16 10:00:00");
+//        compareHHMMDD("2025-02-17 20:00:00", "2025-02-16 10:00:00");
+        C c = new C();
+        c.setAmount(new BigDecimal("120"));
+        System.out.println();
+    }
+
+    static void compareHHMMDD(String date1, String date2) {
+
+
+        // Define the date-time format
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+
+        // Parse the strings to LocalDateTime
+        LocalDateTime dateTime1 = LocalDateTime.parse(date1, formatter);
+        LocalDateTime dateTime2 = LocalDateTime.parse(date2, formatter);
+
+        // Convert LocalDateTime to LocalDate
+//        LocalDate localDate1 = dateTime1.toLocalDate();
+//        LocalDate localDate2 = dateTime2.toLocalDate();
+
+        LocalDate localDate1 = LocalDate.parse(date1, formatter);
+        LocalDate localDate2 = LocalDate.parse(date2, formatter);
+
+        // Compare the dates
+        if (localDate1.isBefore(localDate2)) {
+            System.out.println("The first date is before the second date.");
+        }
+        if (localDate1.isAfter(localDate2)) {
+            System.out.println("The first date is after the second date.");
+        }
     }
 
     static void testEmptyListForEach() {
