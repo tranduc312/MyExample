@@ -13,9 +13,9 @@ public class SheepManager {
     private static List<Integer> list = new ArrayList<>();
 
     private void incrementAndReport() {
-        synchronized (this) {
+//        synchronized (this) {
             System.out.print(sheepCount.incrementAndGet() + " ");;
-        }
+//        }
     }
 
     public static void main(String[] args) {
@@ -24,7 +24,7 @@ public class SheepManager {
             executorService = Executors.newFixedThreadPool(20);
             SheepManager sheepManager = new SheepManager();
             for (int i = 0; i < 100; i++) {
-                executorService.submit(() -> sheepManager.incrementAndReport());
+                executorService.submit(sheepManager::incrementAndReport);
             }
         } finally {
             if (executorService != null) {

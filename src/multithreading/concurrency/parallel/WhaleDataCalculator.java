@@ -14,8 +14,8 @@ public class WhaleDataCalculator {
     }
 
     public void processAllData(List<Integer> data) {
-        data.stream().map(a -> processRecord(a)).count();
-//        data.parallelStream().map(a -> processRecord(a)).count();
+//        data.stream().map(a -> processRecord(a)).count();
+        data.parallelStream().map(a -> processRecord(a)).count();
     }
 
     public static void main(String[] args) {

@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class ParallelSample {
 
     public static void main(String[] args) {
-//        test();
+        test();
 //        for (int i = 0; i < 10; i++) {
 //            parallel();
 //        }
@@ -14,7 +14,7 @@ public class ParallelSample {
 
     static void reduce() {
         System.out.println(Arrays.asList('w', 'o', 'l', 'f')
-                .stream()
+                .parallelStream()
                 .reduce("",(c,s1) -> c + s1,
                         (s2,s3) -> s2 + s3));
     }
@@ -27,6 +27,6 @@ public class ParallelSample {
     }
 
     static void test() {
-        Arrays.asList(1,2,3,4,5,6).stream().forEach(s -> System.out.print(s + " "));
+        Arrays.asList(1,2,3,4,5,6).parallelStream().forEach(s -> System.out.print(s + " "));
     }
 }

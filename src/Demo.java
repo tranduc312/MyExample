@@ -11,7 +11,7 @@ public class Demo {
             queue.offer(i);
         }
 
-        ExecutorService executorService = Executors.newFixedThreadPool(4);
+        ExecutorService executorService = Executors.newFixedThreadPool(2);
 
         executorService.execute(() -> queue.forEach(System.out::println));
 
